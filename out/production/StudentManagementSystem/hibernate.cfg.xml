@@ -4,10 +4,16 @@
     "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
 <hibernate-configuration>
   <session-factory>
-    <property name="connection.url"/>
-    <property name="connection.driver_class"/>
-    <property name="connection.username"/>
-    <property name="connection.password"/>
+    <property name="connection.url">jdbc:mysql://localhost:3306/Project</property>
+    <property name="connection.driver_class">com.mysql.jdbc.Driver</property>
+    <mapping resource="Project/model/CourseDetails.hbm.xml"/>
+    <mapping class="Project.model.CourseDetails"/>
+    <mapping resource="Project/model/RegisteredCourses.hbm.xml"/>
+    <mapping class="Project.model.RegisteredCourses"/>
+    <mapping resource="Project/model/Transcript.hbm.xml"/>
+    <mapping class="Project.model.Transcript"/>
+    <mapping class="Project.model.User"/>
+    <mapping resource="Project/model/User.hbm.xml"/>
     <!-- DB schema will be updated if needed -->
     <!-- <property name="hbm2ddl.auto">update</property> -->
   </session-factory>

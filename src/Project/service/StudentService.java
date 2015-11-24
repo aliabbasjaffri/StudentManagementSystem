@@ -10,15 +10,13 @@ public class StudentService {
 		studentRepository = new StudentRepository();
 	}
 
-	public String save(String userName, String password,
-			String firstName, String lastName, String dateOfBirth,
-			String emailAddress) {
+	public String save(String firstName, String lastName, String dateOfBirth, String Address , String PhoneNumber , String userName, String password, String emailAddress)
+	{
 		if (studentRepository != null) {
 			if (studentRepository.findByUserName(userName)) {
 				return "SignupFailure-UserNameExists";
 			}
-			studentRepository.save(userName, password, firstName, lastName,
-					dateOfBirth, emailAddress);
+			studentRepository.save(firstName, lastName, dateOfBirth, Address , PhoneNumber , userName, password, emailAddress);
 			return "SignupSuccess";
 		} else {
 			return "SignupFailure";

@@ -14,11 +14,13 @@ import com.opensymphony.xwork2.validator.annotations.ValidatorType;
 public class SignupAction extends ActionSupport {
 
 	private String pageName;
-	private String userName;
-	private String password;
 	private String firstName;
 	private String lastName;
 	private String dateOfBirth;
+	private String address;
+	private String phoneNumber;
+	private String userName;
+	private String password;
 	private String emailAddress;
 
 	@Action("signup-input")
@@ -32,10 +34,10 @@ public class SignupAction extends ActionSupport {
 		String result = "";
 		StudentService studentService = new StudentService();
 
-		if (pageName != null && studentService != null) {
+		if (pageName != null && studentService != null)
+		{
 			if (pageName.equals("signup")) {
-				result = studentService.save(userName, password, firstName,
-						lastName, dateOfBirth, emailAddress);
+				result = studentService.save(firstName, lastName, dateOfBirth, address , phoneNumber , userName, password, emailAddress);
 				if (result.equals("SignupSuccess")) {
 					return "login-input";
 				} else {
@@ -109,5 +111,24 @@ public class SignupAction extends ActionSupport {
 	@RequiredStringValidator(type = ValidatorType.FIELD, message = "DateOfBirth is a required field")
 	public void setDateOfBirth(String dateOfBirth) {
 		this.dateOfBirth = dateOfBirth;
+	}
+
+
+	public String getAddress() {
+		return address;
+	}
+
+	@RequiredStringValidator(type = ValidatorType.FIELD, message = "Address is a required field")
+	public void setAddress(String address) {
+		this.address = address;
+	}
+
+	public String getPhoneNumber() {
+		return phoneNumber;
+	}
+
+	@RequiredStringValidator(type = ValidatorType.FIELD, message = "Phone Number is a required field")
+	public void setPhoneNumber(String phoneNumber) {
+		this.phoneNumber = phoneNumber;
 	}
 }
