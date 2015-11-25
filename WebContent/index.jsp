@@ -1,25 +1,21 @@
 <html>
-<head>
-<link href="assets/css/bootstrap-united.css" rel="stylesheet" />
-<link href="bootstrap/css/bootstrap-responsive.css" rel="stylesheet" />
-<style>
-body {
-	height: 100%;
-	margin: 0;
-	background: url(assets/img/books.jpg);
-	background-size: 1440px 800px;
-	background-repeat: no-repeat;
-	display: compact;
-}
-</style>
-</head>
+	<head>
+		<link href="assets/css/bootstrap-united.css" rel="stylesheet" />
+		<link href="bootstrap/css/bootstrap-responsive.css" rel="stylesheet" />
+		<style>
+			body
+			{
+				margin: 0;
+				background: url(assets/img/grayshades.jpg) no-repeat;
+				background-size: 1440px 800px;
+			}
+		</style>
+		<title>Student Management System</title>
+	</head>
 <body>
 	<div class="navbar navbar-default">
 
 		<div class="navbar-collapse collapse navbar-responsive-collapse">
-			<form class="navbar-form navbar-right">
-				<input type="text" class="form-control" placeholder="Search">
-			</form>
 			<ul class="nav navbar-nav navbar-right">
 				<li class="active"><a href="">Home</a></li>
 				<li><a href="signup-input">Signup</a></li>
@@ -35,25 +31,21 @@ body {
 		</div>
 		<!-- /.nav-collapse -->
 	</div>
-	<div class="container">
-		<div class="jumbotron">
+	<div class="container" >
+		<div class="jumbotron" style="background-color: #e4e4e4">
 			<div>
-				<h1>Welcome to Online Student Enrollment!</h1>
-				<p>To get started, you need to enter your details to enroll with
-					us. Or login to access your details, if you are already enrolled.</p>
+				<h1 align="center">Student Management System</h1>
 			</div>
-
-			<a class="btn btn-primary" href="signup-input">Signup � </a> <a
-				class="btn btn-primary" href="login-input">Login � </a>
 		</div>
 
-		<div></div>
+		<div align="center">
+			<a class="btn btn-primary" href="signup-input">Signup</a>
+			<a class="btn btn-primary" href="login-input">Login</a>
+		</div>
+
 	</div>
-	<script src="jquery-1.8.3.js">
-</script>
 
-	<script src="bootstrap/js/bootstrap.js">
-</script>
-
+	<script src="jquery-1.8.3.js"/>
+	<script src="bootstrap/js/bootstrap.js"/>
 </body>
 </html>

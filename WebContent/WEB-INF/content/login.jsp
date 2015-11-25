@@ -49,18 +49,7 @@ input[type="text"],input[type="password"] {
 
 	<div class="navbar navbar-default">
 
-		<div class="navbar-header">
-			<button type="button" class="navbar-toggle" data-toggle="collapse"
-				data-target=".navbar-responsive-collapse">
-				<span class="icon-bar"></span> <span class="icon-bar"></span> <span
-					class="icon-bar"></span>
-			</button>
-		</div>
-
 		<div class="navbar-collapse collapse navbar-responsive-collapse">
-			<form class="navbar-form navbar-right">
-				<input type="text" class="form-control" placeholder="Search">
-			</form>
 			<ul class="nav navbar-nav navbar-right">
 				<li><a href="/">Home</a></li>
 				<li><a href="signup-input">Signup</a></li>
@@ -78,14 +67,11 @@ input[type="text"],input[type="password"] {
 	</div>
 
 	<div class="container">
-		<div class="jumbotron">
+		<div class="jumbotron" style="background-color: #e4e4e4">
 			<div>
-				<h1>Welcome to Online Student Enrollment Login</h1>
-				<p>Login to explore the complete features!</p>
+				<h1 align="center">Student Management System</h1>
 			</div>
 		</div>
-
-		<div></div>
 	</div>
 
 	<div class="col-lg-6 col-lg-offset-3">

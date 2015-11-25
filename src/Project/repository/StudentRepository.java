@@ -12,7 +12,7 @@ import Project.util.DbUtil;
 public class StudentRepository
 {
 	private Connection dbConnection;
-	private static double RollNumber = 114000;
+	private static int RollNumber = 114000;
 
 	public StudentRepository() {
 		dbConnection = DbUtil.getConnection();

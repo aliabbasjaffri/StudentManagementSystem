@@ -47,19 +47,7 @@ input[type="text"],input[type="password"] {
 	</script>
 
 	<div class="navbar navbar-default">
-
-		<div class="navbar-header">
-			<button type="button" class="navbar-toggle" data-toggle="collapse"
-				data-target=".navbar-responsive-collapse">
-				<span class="icon-bar"></span> <span class="icon-bar"></span> <span
-					class="icon-bar"></span>
-			</button>
-		</div>
-
 		<div class="navbar-collapse collapse navbar-responsive-collapse">
-			<form class="navbar-form navbar-right">
-				<input type="text" class="form-control" placeholder="Search">
-			</form>
 			<ul class="nav navbar-nav navbar-right">
 				<li><a href="/">Home</a></li>
 				<li class="active"><a href="signup-input">Signup</a></li>
@@ -70,21 +58,19 @@ input[type="text"],input[type="password"] {
 						<li><a href="#">Contact us</a></li>
 						<li class="divider"></li>
 						<li><a href="#">Further Actions</a></li>
-					</ul></li>
+					</ul>
+				</li>
 			</ul>
 		</div>
 		<!-- /.nav-collapse -->
 	</div>
 
 	<div class="container">
-		<div class="jumbotron">
+		<div class="jumbotron" style="background-color: #e4e4e4">
 			<div>
-				<h1>Welcome to Online Student Enrollment Signup</h1>
-				<p>Its absolutely quick!</p>
+				<h1 align="center">Student Management System</h1>
 			</div>
 		</div>
-
-		<div></div>
 	</div>
 
 	<div class="col-lg-6 col-lg-offset-3">
@@ -96,7 +82,7 @@ input[type="text"],input[type="password"] {
 							validate="true" cssClass="bs-example form-horizontal"
 							method="post">
 							<fieldset>
-								<legend>Student Enrollment Signup Form</legend>
+								<legend align="center">Enrollment Signup Form</legend>
 
 								<s:textfield label="User Name" name="userName"
 									cssClass="col-lg-11" placeholder="User Name" />
@@ -109,6 +95,12 @@ input[type="text"],input[type="password"] {
 
 								<s:textfield label="Last Name" name="lastName"
 									cssClass="col-lg-11" placeholder="Last Name" />
+
+								<s:textfield label="Address" name="address"
+											 cssClass="col-lg-11" placeholder="Address" />
+
+								<s:textfield label="Phone Number" name="phoneNumber"
+											 cssClass="col-lg-11" placeholder="Phone Number" />
 
 								<sj:datepicker id="dateOfBirthInput" name="dateOfBirth"
 									label="Date of Birth" cssClass="col-lg-11"
@@ -123,24 +115,20 @@ input[type="text"],input[type="password"] {
 									<s:submit cssClass="btn btn-default" value="Cancel" />
 									<s:submit cssClass="btn btn-primary" value="Submit"
 										data-toggle="modal" data-target="#themodal" />
-									<div id="themodal" class="modal fade col-lg-9 col-lg-offset-3"
-										data-backdrop="static">
+									<div id="themodal" class="modal fade col-lg-9 col-lg-offset-3" data-backdrop="static">
 										<div class="modal-dialog">
 											<div class="modal-content">
 												<div class="modal-header">
-													<button type="button" class="close" data-dismiss="modal"
-														aria-hidden="true">&times;</button>
+													<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
 													<h3>Signup Form Submission</h3>
 												</div>
 												<div class="modal-body">
-													<p>Are you sure you want to do this?</p>
+													<p>Are you sure you want to submit the details?</p>
 													<div class="progress progress-striped active">
 														<div id="doitprogress" class="progress-bar"></div>
 													</div>
 												</div>
 												<div class="modal-footer">
-													<sj:submit cssClass="btn btn-default" value="Close"
-														data-dismiss="modal" />
 													<sj:submit cssClass="btn btn-primary" value="Yes"
 														id="yesbutton" formId="myForm"
 														data-loading-text="Saving.."

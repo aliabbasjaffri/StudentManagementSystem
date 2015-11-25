@@ -20,18 +20,7 @@
 
 	<div class="navbar navbar-default">
 
-		<div class="navbar-header">
-			<button type="button" class="navbar-toggle" data-toggle="collapse"
-				data-target=".navbar-responsive-collapse">
-				<span class="icon-bar"></span> <span class="icon-bar"></span> <span
-					class="icon-bar"></span>
-			</button>
-		</div>
-
 		<div class="navbar-collapse collapse navbar-responsive-collapse">
-			<form class="navbar-form navbar-right">
-				<input type="text" class="form-control" placeholder="Search">
-			</form>
 			<ul class="nav navbar-nav navbar-right">
 				<li><a href="/">Home</a></li>
 				<li><a href="signup-input">Signup</a></li>
@@ -53,19 +42,50 @@
 	 -->
 	<div class="panel panel-success">
 		<div class="panel-heading">
-			<h3 class="panel-title">Student Enrollment Login success</h3>
+			<h3 align="center" class="panel-title">Student Enrollment Dashboard</h3>
 		</div>
 		<div class="panel-body">
 			<div class="alert alert-dismissable alert-success">
 				<button type="button" class="close" data-dismiss="alert">×</button>
-				<strong>Well done!</strong> You successfully logged-into the system.
-				Now you can explore the complete features!
+				<p align="center">
+					<strong>Login Successful!</strong>
+				</p>
 			</div>
 		</div>
 	</div>
-	<div></div>
-	<div></div>
-	<a class="btn btn-primary" href="login-input">Login as different
-		user?</a>
+
+	<table class="table table-striped">
+		<th>
+			<td>F. Name</td>
+			<td>L. Name</td>
+			<td>Age</td>
+		</th>
+		<tr>
+			<th>
+				<td>Jill</td>
+				<td>Smith</td>
+				<td>50</td>
+			</th>
+		</tr>
+		<tr>
+			<th>
+				<td>Eve</td>
+				<td>Jackson</td>
+				<td>94</td>
+			</th>
+		</tr>
+		<tr>
+			<th>
+				<td>John</td>
+				<td>Doe</td>
+				<td>80</td>
+			</th>
+		</tr>
+	</table>
+
+	<div align="center">
+		<a class="btn btn-primary" href="login-input">Login as different user?</a>
+	</div>
+
 </body>
 </html>

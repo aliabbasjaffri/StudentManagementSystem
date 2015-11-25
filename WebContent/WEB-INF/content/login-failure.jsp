@@ -11,27 +11,15 @@
 </head>
 <body>
 	<script src="jquery-1.8.3.js">
-		
+
 	</script>
 
 	<script src="bootstrap/js/bootstrap.js">
-		
+
 	</script>
 
 	<div class="navbar navbar-default">
-
-		<div class="navbar-header">
-			<button type="button" class="navbar-toggle" data-toggle="collapse"
-				data-target=".navbar-responsive-collapse">
-				<span class="icon-bar"></span> <span class="icon-bar"></span> <span
-					class="icon-bar"></span>
-			</button>
-		</div>
-
 		<div class="navbar-collapse collapse navbar-responsive-collapse">
-			<form class="navbar-form navbar-right">
-				<input type="text" class="form-control" placeholder="Search">
-			</form>
 			<ul class="nav navbar-nav navbar-right">
 				<li><a href="/">Home</a></li>
 				<li><a href="signup-input">Signup</a></li>
@@ -48,23 +36,25 @@
 		<!-- /.nav-collapse -->
 	</div>
 
-	<!-- 
+	<!--
 	<legend>Student Enrollment Login Success</legend>
 	 -->
 	<div class="panel panel-danger">
 		<div class="panel-heading">
-			<h3 class="panel-title">Student Enrollment Login failure</h3>
+			<h3 align="center" class="panel-title">Student Enrollment Login failure</h3>
 		</div>
 		<div class="panel-body">
 			<div class="alert alert-dismissable alert-danger">
 				<button type="button" class="close" data-dismiss="alert">×</button>
-				<strong>Oh snap!</strong> Something is wrong. Change a few things up
-				and try submitting again.
+				<p align="center">
+					<strong>Oh snap! Invalid Username/Password!</strong>
+				</p>
 			</div>
 		</div>
-		<div></div>
-		<div></div>
-		<a class="btn btn-primary" href="login-input">Try again?</a>
+		<div align="center">
+			<a class="btn btn-primary" href="login-input">Try again here!</a>
+		</div>
+
 	</div>
 </body>
 </html>
