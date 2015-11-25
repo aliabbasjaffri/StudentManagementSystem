@@ -1,6 +1,9 @@
 package Project.service;
 
+import Project.model.CourseDetails;
 import Project.repository.StudentRepository;
+
+import java.util.List;
 
 public class StudentService {
 
@@ -32,5 +35,31 @@ public class StudentService {
 			}
 		}
 		return result;
+	}
+
+	public List<CourseDetails> showAllAvailableCourses( )
+	{
+		if (studentRepository != null)
+		{
+			List<CourseDetails> courses = studentRepository.showAllAvailableCourses();
+			if (courses != null)
+			{
+				return courses;
+			}
+		}
+		return null;
+	}
+
+	public List<CourseDetails> showAllCourses(String username)
+	{
+		if (studentRepository != null)
+		{
+			List<CourseDetails> courses = studentRepository.showAllCourses(username);
+			if (courses != null)
+			{
+				return courses;
+			}
+		}
+		return null;
 	}
 }

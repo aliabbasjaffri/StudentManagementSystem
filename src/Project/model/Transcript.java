@@ -11,7 +11,7 @@ import javax.persistence.Id;
 @Entity
 public class Transcript {
     private int id;
-    private double rollNumber;
+    private String rollNumber;
     private double courseId;
     private String grade;
 
@@ -27,11 +27,11 @@ public class Transcript {
 
     @Basic
     @Column(name = "Roll_Number")
-    public double getRollNumber() {
+    public String getRollNumber() {
         return rollNumber;
     }
 
-    public void setRollNumber(double rollNumber) {
+    public void setRollNumber(String rollNumber) {
         this.rollNumber = rollNumber;
     }
 
@@ -63,8 +63,8 @@ public class Transcript {
         Transcript that = (Transcript) o;
 
         if (id != that.id) return false;
-        if (Double.compare(that.rollNumber, rollNumber) != 0) return false;
         if (Double.compare(that.courseId, courseId) != 0) return false;
+        if (rollNumber != null ? !rollNumber.equals(that.rollNumber) : that.rollNumber != null) return false;
         if (grade != null ? !grade.equals(that.grade) : that.grade != null) return false;
 
         return true;
@@ -75,8 +75,7 @@ public class Transcript {
         int result;
         long temp;
         result = id;
-        temp = Double.doubleToLongBits(rollNumber);
-        result = 31 * result + (int) (temp ^ (temp >>> 32));
+        result = 31 * result + (rollNumber != null ? rollNumber.hashCode() : 0);
         temp = Double.doubleToLongBits(courseId);
         result = 31 * result + (int) (temp ^ (temp >>> 32));
         result = 31 * result + (grade != null ? grade.hashCode() : 0);

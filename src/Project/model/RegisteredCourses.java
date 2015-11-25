@@ -11,7 +11,7 @@ import javax.persistence.Id;
 @Entity
 public class RegisteredCourses {
     private int id;
-    private double rollNumber;
+    private String rollNumber;
     private double courseId;
 
     @Id
@@ -26,11 +26,11 @@ public class RegisteredCourses {
 
     @Basic
     @Column(name = "Roll_Number")
-    public double getRollNumber() {
+    public String getRollNumber() {
         return rollNumber;
     }
 
-    public void setRollNumber(double rollNumber) {
+    public void setRollNumber(String rollNumber) {
         this.rollNumber = rollNumber;
     }
 
@@ -52,7 +52,6 @@ public class RegisteredCourses {
         RegisteredCourses that = (RegisteredCourses) o;
 
         if (id != that.id) return false;
-        if (Double.compare(that.rollNumber, rollNumber) != 0) return false;
         if (Double.compare(that.courseId, courseId) != 0) return false;
 
         return true;
@@ -63,8 +62,6 @@ public class RegisteredCourses {
         int result;
         long temp;
         result = id;
-        temp = Double.doubleToLongBits(rollNumber);
-        result = 31 * result + (int) (temp ^ (temp >>> 32));
         temp = Double.doubleToLongBits(courseId);
         result = 31 * result + (int) (temp ^ (temp >>> 32));
         return result;

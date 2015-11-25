@@ -50,16 +50,15 @@ input[type="text"],input[type="password"] {
 		<div class="navbar-collapse collapse navbar-responsive-collapse">
 			<ul class="nav navbar-nav navbar-right">
 				<li><a href="/">Home</a></li>
-				<li class="active"><a href="signup-input">Signup</a></li>
-				<li><a href="login-input">Login</a></li>
+				<li><a href="signup-input">Signup</a></li>
+				<li class="active"><a href="login-input">Login</a></li>
 				<li class="dropdown"><a href="#" class="dropdown-toggle"
-					data-toggle="dropdown">Explore<b class="caret"></b></a>
+										data-toggle="dropdown">Explore<b class="caret"></b></a>
 					<ul class="dropdown-menu">
-						<li><a href="#">Contact us</a></li>
+						<li><a href="courses-all">All Courses</a></li>
 						<li class="divider"></li>
 						<li><a href="#">Further Actions</a></li>
-					</ul>
-				</li>
+					</ul></li>
 			</ul>
 		</div>
 		<!-- /.nav-collapse -->
