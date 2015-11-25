@@ -57,7 +57,7 @@ input[type="text"],input[type="password"] {
 				<li class="dropdown"><a href="#" class="dropdown-toggle"
 					data-toggle="dropdown">Explore<b class="caret"></b></a>
 					<ul class="dropdown-menu">
-						<li><a href="#">Contact us</a></li>
+						<li><a href="courses-all">All Courses</a></li>
 						<li class="divider"></li>
 						<li><a href="#">Further Actions</a></li>
 					</ul></li>
@@ -83,7 +83,7 @@ input[type="text"],input[type="password"] {
 							validate="true" cssClass="bs-example form-horizontal"
 							method="post">
 							<fieldset>
-								<legend>Student Enrollment Login Form</legend>
+								<legend align="center">Enrollment Login Form</legend>
 
 								<s:textfield label="User Name" name="userName"
 									cssClass="col-lg-12" placeholder="User Name" />
