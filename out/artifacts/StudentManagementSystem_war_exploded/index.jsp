@@ -13,17 +13,20 @@
 		<title>Student Management System</title>
 	</head>
 <body>
+	<script src="jquery-1.8.3.js"></script>
+	<script src="bootstrap/js/bootstrap.js"></script>
+
 	<div class="navbar navbar-default">
 
 		<div class="navbar-collapse collapse navbar-responsive-collapse">
 			<ul class="nav navbar-nav navbar-right">
-				<li class="active"><a href="">Home</a></li>
+				<li><a href="/">Home</a></li>
 				<li><a href="signup-input">Signup</a></li>
-				<li><a href="login-input">Login</a></li>
+				<li ><a href="login-input">Login</a></li>
 				<li class="dropdown"><a href="#" class="dropdown-toggle"
-					data-toggle="dropdown">Explore<b class="caret"></b></a>
+										data-toggle="dropdown">Explore<b class="caret"></b></a>
 					<ul class="dropdown-menu">
-						<li><a href="#">Contact us</a></li>
+						<li><a href="courses-show-all">All Courses</a></li>
 						<li class="divider"></li>
 						<li><a href="#">Further Actions</a></li>
 					</ul></li>
@@ -45,7 +48,6 @@
 
 	</div>
 
-	<script src="jquery-1.8.3.js"/>
-	<script src="bootstrap/js/bootstrap.js"/>
+
 </body>
 </html>

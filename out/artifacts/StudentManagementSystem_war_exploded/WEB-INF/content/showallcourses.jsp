@@ -37,7 +37,7 @@
                 <li class="dropdown"><a href="#" class="dropdown-toggle"
                                         data-toggle="dropdown">Explore<b class="caret"></b></a>
                     <ul class="dropdown-menu">
-                        <li><a href="courses-all">All Courses</a></li>
+                        <li><a href="courses-show-all">All Courses</a></li>
                         <li class="divider"></li>
                         <li><a href="#">Further Actions</a></li>
                     </ul></li>
@@ -59,9 +59,9 @@
             <th>
                 <td ><s:property value="name"/></td>
                 <td ><s:property value="courseId"/></td>
-                <td ><s:property value="Instructor_Name"/></td>
-                <td ><s:property value="Time"/></td>
-                <td ><s:property value="Day"/></td>
+                <td ><s:property value="instructorName"/></td>
+                <td ><s:property value="time"/></td>
+                <td ><s:property value="day"/></td>
             </th>
         </tr>
     </s:iterator>

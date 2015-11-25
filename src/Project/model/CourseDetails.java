@@ -12,7 +12,7 @@ import javax.persistence.Id;
 public class CourseDetails {
     private int id;
     private String name;
-    private double courseId;
+    private String courseId;
     private String courseDescription;
     private String instructorName;
     private String time;
@@ -40,11 +40,11 @@ public class CourseDetails {
 
     @Basic
     @Column(name = "Course_ID")
-    public double getCourseId() {
+    public String getCourseId() {
         return courseId;
     }
 
-    public void setCourseId(double courseId) {
+    public void setCourseId(String courseId) {
         this.courseId = courseId;
     }
 
@@ -96,7 +96,7 @@ public class CourseDetails {
         CourseDetails that = (CourseDetails) o;
 
         if (id != that.id) return false;
-        if (Double.compare(that.courseId, courseId) != 0) return false;
+        if (courseId != null ? !courseId.equals(that.courseId) : that.courseId != null) return false;
         if (name != null ? !name.equals(that.name) : that.name != null) return false;
         if (courseDescription != null ? !courseDescription.equals(that.courseDescription) : that.courseDescription != null)
             return false;
@@ -114,9 +114,8 @@ public class CourseDetails {
         long temp;
         result = id;
         result = 31 * result + (name != null ? name.hashCode() : 0);
-        temp = Double.doubleToLongBits(courseId);
-        result = 31 * result + (int) (temp ^ (temp >>> 32));
         result = 31 * result + (courseDescription != null ? courseDescription.hashCode() : 0);
+        result = 31 * result + (courseId != null ? courseId.hashCode() : 0);
         result = 31 * result + (instructorName != null ? instructorName.hashCode() : 0);
         result = 31 * result + (time != null ? time.hashCode() : 0);
         result = 31 * result + (day != null ? day.hashCode() : 0);

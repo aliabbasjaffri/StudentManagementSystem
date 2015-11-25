@@ -29,7 +29,7 @@
 					<li class="dropdown"><a href="#" class="dropdown-toggle"
 											data-toggle="dropdown">Explore<b class="caret"></b></a>
 						<ul class="dropdown-menu">
-							<li><a href="courses-all">All Courses</a></li>
+							<li><a href="courses-show-all">All Courses</a></li>
 							<li class="divider"></li>
 							<li><a href="#">Further Actions</a></li>
 						</ul></li>
@@ -89,7 +89,6 @@
 		<p>
 			<a class="btn btn-large btn-block btn-primary" href="courses-add">Add Courses</a>
 			<a class="btn btn-large btn-block btn-primary" href="courses-show">View Registered Courses</a>
-			<a class="btn btn-large btn-block btn-primary" href="courses-show-all">Show All Courses</a>
 		</p>
 	</div>
 
