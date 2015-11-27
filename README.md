@@ -1,5 +1,7 @@
 # StudentManagementSystem
-Import the DB in a Database named "Project"
+The Database is set up on MySQL.
+You can download a MySQL server from: https://www.mysql.com/downloads/
+Make a new database "Project" and import the DB in it.
 
 Download the complete project and open it using IntelliJ Idea ULTIMATE EDITION.
 Download Tomcat Server and install it using a simple tutorial.
