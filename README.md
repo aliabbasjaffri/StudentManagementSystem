@@ -10,4 +10,6 @@ I installed it following the steps on this link: https://wolfpaulus.com/journal/
 Configure the Tomcat Server on the IntelliJ Idea, using simple steps.
 Follow the steps here: https://www.jetbrains.com/idea/help/defining-application-servers-in-intellij-idea.html
 
+Special thanks to: http://elizabetht.github.io/blog/2013/11/21/student-enrollment-using-struts-2/ for the base application.
+
 Run the application and enjoy.
